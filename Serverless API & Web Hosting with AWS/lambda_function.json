@@ -39,3 +39,12 @@ async function handler(event) {
 }
 
 export { handler };
+
+            statusCode: 500,
+            body: JSON.stringify({ message: "Failed to retrieve user data" }),
+            headers: {'Content-Type': 'application/json'}
+        };
+    }
+}
+
+export { handler };
